@@ -1,0 +1,193 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<style type="text/css">
+    body {
+            color: #292929;
+            font: 90% Roboto, Arial, sans-serif;
+            font-weight: 300;
+        }
+</style>
+<style>
+    
+
+    /* (A) SHARED CLASS */
+    .box {
+      margin: 5px;
+      padding: 10px;
+      font-size: 15px;
+    }
+     
+    /* (B) BOX VARIATIONS */
+    /* (B1) INFORMATION BOX */
+    .info {
+      color: rgb(29, 29, 29);
+      background: rgb(166, 213, 231);
+      border: 1px solid rgb(0, 0, 0);
+    }
+     
+    /* (B2) WARNING BOX */
+    .Comment {
+      color: rgb(0, 0, 0);
+      background: rgb(255, 255, 255);
+      border: 1px solid rgb(0, 0, 0);
+    }
+    </style>
+     
+    <!-- (B1) INFORMATION -->
+    <div class="box info">
+        Additional Comments
+    </div>
+     
+    <!-- (B2) WARNING -->
+    <div class="box Comment">
+      <label for="noteYear">Year: </label>
+      <select name="years" id="noteYear">
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+
+      </select>
+        <label for="noteMonth">&nbsp;&nbsp;Month: </label>
+        <select name="months" id="noteMonth">
+            <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+
+        </select>
+        <label for="noteDays">&nbsp;&nbsp;Date: </label>
+        <select name="days" id="noteDays">
+            <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+
+        </select>
+        <p>
+        </select>
+        <label for="area">Area: </label>
+        <select name="area" id="area">
+            <option>None</option>
+            <option>Sickness/Diseases</option>
+          <option>Medication</option>
+          <option>Other</option>
+
+        </select>
+        </p>
+
+        <a>
+            Title: 
+        </a>
+            <textarea id="noteTitle" name="noteTitle" rows="1" cols="50"></textarea>
+        <br>
+        </p>
+
+        <p>
+            <textarea id="noteText" name="noteText" rows="4" cols="50"></textarea>
+  <br> <input type="submit" value="Submit" id="noteSubmit" onclick="addNote">
+        </p>
+    </div>
+
+    <style>
+
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        </style>
+        </head>
+        <body>
+        
+        <h2></h2>
+        
+        <table id="noteTable" class = "table">
+          <tr>
+            
+            <th><center>#</center></th>
+            <th>Date</th>
+            <th>Area</th>
+            <th>Title</th>
+          </tr>
+          <tr>
+            <td><center>1</center></td>
+            <td>22/09/10</td>
+            <td>Sickness/Diseases</td>
+            <td><a href="url">Mere side effects after getting covid 19 vaccine shot</a></td>
+          </tr>
+          <tr>
+            <td><center>2</center></td>
+            <td>22/06/25</td>
+            <td>Medication</td>
+            <td><a href="url">The patient refused to take medication</a></td>
+          </tr>
+          <tr>
+            <td><center>3</center></td>
+            <td>22/04/04</td>
+            <td>Sickness/Diseases</td>
+            <td><a href="url">Test Comments 3</a></td>
+          </tr>
+          <tr>
+            <td><center>4</center></td>
+            <td>22/01/03</td>
+            <td>Other</td>
+            <td><a href="url">Test Comments 4</a></td>
+          </tr>
+        </table>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        </body>
+        </html>
